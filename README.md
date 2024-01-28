@@ -2,7 +2,7 @@
 
 This repo is just a set of example OpenGL applications done in [go-gl](https://github.com/go-gl/gl) as I learn my way around the technology.
 
-There are a couple of useful resources that I've been working with:
+There are a few useful resources that I've been working with:
 
 - [https://kylewbanks.com/blog/tutorial-opengl-with-golang-part-1-hello-opengl](https://kylewbanks.com/blog/tutorial-opengl-with-golang-part-1-hello-opengl) - This one is specific to `go-gl`, but goes off in the direction of making a Conway's game of life application, so doesn't go too deep into any GL topics beyond making a white square. That said, for getting that far, it was indispensible. Thank you!
 - [https://learnopengl.com/Introduction](https://learnopengl.com/Introduction) - a great reference, but written in C, so every single line has to be translated to Go, and that is not super easy. But with the help of the above link, I was able to get things up and running and have been using parts of this resource as a guide for each of the steps.
