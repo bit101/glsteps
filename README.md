@@ -9,10 +9,19 @@ There are a couple of useful resources that I've been working with:
 
 But even with those as guides, there are SO many steps involved just with drawing a single triangle to the screen. Very difficult to no where to start. So I started breaking it down to the absolutely bare-bones minimum, making sure I understood that, and adding as little else as I could add in a single unit of understanding. Here's where I'm at so far:
 
-- [Step 1](step01/step01.go) This is the absolute minimum amount of code I could make and still have an OpenGL window appear on the screen and not crash. It initializes `glfw`, creates a window and loops until the window is killed.
-- [Step 2](step02/step02.go) I add a bit more safety code here. Just locking the OS thread, as is best practice in `go-gl`, before doing anything, and terminating `glfw` when I'm done.
-- [Step 3](step03/step03.go) Here I move a few of the steps into their own functions. And I add quite a bit more to the code that creates the window.
-- [Step 4](step04/step04.go) In this one, I defer the `glfw` termination (minor change) and start input processing. The input processing closes the window when the user hits the escape key.
+- [Step 1](step01/step01.go) This is the absolute minimum amount of code I could make and still have an OpenGL window appear on the screen and not crash.
+    -   Initialize `glfw`
+    -   Create a window
+    -   Loop until the window is killed
+- [Step 2](step02/step02.go) I add a bit more safety code here.
+    - Locki the OS thread, as is best practice in `go-gl`, before doing anything
+    -  Terminate `glfw` when the app is done
+- [Step 3](step03/step03.go) Orginazation and window stuff.
+    - Move a few of the steps into their own functions
+    - Add quite a bit more to the code that creates the window
+- [Step 4](step04/step04.go) Input processing.
+    -  Defer the `glfw` termination (minor change)
+    -  Input processing closes the window when the user hits the escape key
 - [Step 5](step05/step05.go) Now I start to add some actual `gl` calls:
     - Initialize OpenGL
     - Set the viewport
