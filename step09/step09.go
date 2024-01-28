@@ -76,7 +76,9 @@ func appLoop(window *glfw.Window, vao, program uint32) {
 		gl.ClearColor(1.0, 0.0, 0.0, 1.0)
 		gl.Clear(gl.COLOR_BUFFER_BIT)
 
-		// get the location for the uniform
+		// get the location for the uniform. note that the uniform name has to be encoded
+		// as a zero-terminated string. Hence the added \x00. options here:
+		// \x00, \000, \u0000
 		vertexColorLocation := gl.GetUniformLocation(program, gl.Str("uni_color\x00"))
 		gl.UseProgram(program)
 
