@@ -7,7 +7,7 @@ There are a couple of useful resources that I've been working with:
 - [https://kylewbanks.com/blog/tutorial-opengl-with-golang-part-1-hello-opengl](https://kylewbanks.com/blog/tutorial-opengl-with-golang-part-1-hello-opengl) - This one is specific to `go-gl`, but goes off in the direction of making a Conway's game of life application, so doesn't go too deep into any GL topics beyond making a white square. That said, for getting that far, it was indispensible. Thank you!
 - [https://learnopengl.com/Introduction](https://learnopengl.com/Introduction) - a great reference, but written in C, so every single line has to be translated to Go, and that is not super easy. But with the help of the above link, I was able to get things up and running and have been using parts of this resource as a guide for each of the steps.
 
-But even with those as guides, there are SO many steps involved just with drawing a single triangle to the screen. Very difficult to no where to start. So I started breaking it down to the absolutely bare-bones minimum, making sure I understood that, and adding as little else as I could add in a single unit of understanding. Here's where I'm at so far:
+But even with those as guides, there are SO many steps involved just with drawing a single triangle to the screen. Very difficult to know where to start. So I started breaking it down to the absolutely bare-bones minimum, making sure I understood that, and adding as little else as I could add for each step, aiming for a single unit of understanding in each one. Here's where I'm at so far:
 
 - [Step 1](step01/step01.go) This is the absolute minimum amount of code I could make and still have an OpenGL window appear on the screen and not crash.
     -   Initialize `glfw`
