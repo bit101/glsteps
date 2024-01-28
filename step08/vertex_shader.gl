@@ -1,0 +1,11 @@
+#version 410
+in vec3 vp;
+// set up an out vec4 to pass the color to the fragment shader
+out vec4 vertex_color;
+
+void main() {
+  gl_Position = vec4(vp, 1.0);
+
+  // this is the value we will pass to the fragment shader
+  vertex_color = vec4(0.5, 0.0, 1.0, 1.0);
+}

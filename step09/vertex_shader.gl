@@ -1,0 +1,7 @@
+#version 410
+in vec3 vp;
+
+// this is back to being a simple vertex shader
+void main() {
+  gl_Position = vec4(vp, 1.0);
+}

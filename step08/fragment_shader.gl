@@ -1,0 +1,10 @@
+#version 410
+out vec4 frag_color;
+
+// receive the value from the vertex shader
+in vec4 vertex_color;
+
+void main() {
+  // use the received value here
+  frag_color = vertex_color;
+}

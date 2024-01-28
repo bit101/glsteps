@@ -40,3 +40,13 @@ But even with those as guides, there are SO many steps involved just with drawin
     - Constants hold the paths to these files
     - Files are loaded and processed appropriately
     - Still draws a yellow triangle on a red canvas
+- [Step 8](step08/step08.go) The vertex shader now defines the fragment color
+    - Vertex shader creates an out vec4 and assigns a velue to it 
+    - Fragment shader reads this value and uses it
+- [Step 9](step09/step09.go) Uniforms
+    - The fragment shader sets a uniform vec4 to read its color from
+    - The main program looks for the location of the uniform variable
+    - It sets the value of that uniform
+- [Step 10](step10/step10.go) Animated color
+    - The main program calculates an ever-changing set of r, g, b values based on time
+    - It passes those rgb values to the uniform read by the fragment shader

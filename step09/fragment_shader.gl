@@ -1,0 +1,10 @@
+#version 410
+out vec4 frag_color;
+
+// uniform set by the main program
+uniform vec4 uni_color;
+
+void main() {
+  // use the uniform value here
+  frag_color = uni_color;
+}

@@ -1,7 +1,7 @@
 // Package main is the starting point of the app.
 package main
 
-import "glsteps/step07"
+import "glsteps/step10"
 
 func main() {
 	// step01.Main()
@@ -10,5 +10,8 @@ func main() {
 	// step04.Main()
 	// step05.Main()
 	// step06.Main()
-	step07.Main()
+	// step07.Main()
+	// step08.Main()
+	// step09.Main()
+	step10.Main()
 }
