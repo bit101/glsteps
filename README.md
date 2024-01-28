@@ -4,8 +4,8 @@ This repo is just a set of example OpenGL applications done in [go-gl](https://g
 
 There are a couple of useful resources that I've been working with:
 
-- [https://learnopengl.com/Introduction](https://learnopengl.com/Introduction) - a great reference, but written in C, so every single line has to be translated to Go, and that is not super easy. But super useful as a general guide.
 - [https://kylewbanks.com/blog/tutorial-opengl-with-golang-part-1-hello-opengl](https://kylewbanks.com/blog/tutorial-opengl-with-golang-part-1-hello-opengl) - This one is specific to `go-gl`, but goes off in the direction of making a Conway's game of life application, so doesn't go too deep into any GL topics beyond making a white square. That said, for getting that far, it was indispensible. Thank you!
+- [https://learnopengl.com/Introduction](https://learnopengl.com/Introduction) - a great reference, but written in C, so every single line has to be translated to Go, and that is not super easy. But with the help of the above link, I was able to get things up and running and have been using parts of this resource as a guide for each of the steps.
 
 But even with those as guides, there are SO many steps involved just with drawing a single triangle to the screen. Very difficult to no where to start. So I started breaking it down to the absolutely bare-bones minimum, making sure I understood that, and adding as little else as I could add in a single unit of understanding. Here's where I'm at so far:
 
@@ -14,7 +14,7 @@ But even with those as guides, there are SO many steps involved just with drawin
     -   Create a window
     -   Loop until the window is killed
 - [Step 2](step02/step02.go) I add a bit more safety code here.
-    - Lock the OS thread, as is best practice in `go-gl`, before doing anything
+    - Lock the OS thread before doing anything, as is best practice in `go-gl`
     - Terminate `glfw` when the app is done
 - [Step 3](step03/step03.go) Orginazation and window stuff.
     - Move a few of the steps into their own functions
@@ -27,7 +27,7 @@ But even with those as guides, there are SO many steps involved just with drawin
     - Set the viewport
     - Set a clear color, clear the screen and swap buffers to make the change take effect
     - Shows a red canvas
-- [Step 6](step06/step06.go) Draws a triangle! Whole lot of changes here that couldn't really be broken down any less.
+- [Step 6](step06/step06.go) Draws a triangle! Whole lot of changes here that couldn't really be broken down any further.
     - Create a vertex shader and fragment shader sources as string constants
     - Create shaders from the shader sources and create a program from the shaders
     - Create vertices as a list of float32s
@@ -36,7 +36,7 @@ But even with those as guides, there are SO many steps involved just with drawin
     - Shows a yellow triangle on the red canvas
 - [Step 7](step07/step07.go) Loads the shaders and vertices from external files
     - Shaders are defined in two external text files
-    - Vertices are defined in an external json files
+    - Vertices are defined in an external json file
     - Constants hold the paths to these files
     - Files are loaded and processed appropriately
     - Still draws a yellow triangle on a red canvas
