@@ -14,8 +14,8 @@ But even with those as guides, there are SO many steps involved just with drawin
     -   Create a window
     -   Loop until the window is killed
 - [Step 2](step02/step02.go) I add a bit more safety code here.
-    - Locki the OS thread, as is best practice in `go-gl`, before doing anything
-    -  Terminate `glfw` when the app is done
+    - Lock the OS thread, as is best practice in `go-gl`, before doing anything
+    - Terminate `glfw` when the app is done
 - [Step 3](step03/step03.go) Orginazation and window stuff.
     - Move a few of the steps into their own functions
     - Add quite a bit more to the code that creates the window
@@ -27,7 +27,7 @@ But even with those as guides, there are SO many steps involved just with drawin
     - Set the viewport
     - Set a clear color, clear the screen and swap buffers to make the change take effect
     - Shows a red canvas
-- [Step 6](step06/step06.go) Draws a triangle!
+- [Step 6](step06/step06.go) Draws a triangle! Whole lot of changes here that couldn't really be broken down any less.
     - Create a vertex shader and fragment shader sources as string constants
     - Create shaders from the shader sources and create a program from the shaders
     - Create vertices as a list of float32s
