@@ -59,3 +59,8 @@ Here's where I'm at so far:
     - Lock os thread in init
     - Delete shaders after making program
     - Show gl version
+- [Step 12](step12/step12.go) Per-vertex colors
+    - Vertex data file contains color values next to position values
+    - Main app sets up vertex attribs to read position data seperately from color data
+    - Vertex shader updated to read position and color values and pass vertex color to fragment shader
+    - Fragment shader updated to read vertex color from vertex shader
