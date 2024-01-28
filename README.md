@@ -51,3 +51,7 @@ But even with those as guides, there are SO many steps involved just with drawin
 - [Step 10](step10/step10.go) Animated color
     - The main program calculates an ever-changing set of r, g, b values based on time
     - It passes those rgb values to the uniform read by the fragment shader
+- [Step 11](step11/step11.go) Some clean up and best practices
+    - Lock os thread in init
+    - Delete shaders after making program
+    - Show gl version
